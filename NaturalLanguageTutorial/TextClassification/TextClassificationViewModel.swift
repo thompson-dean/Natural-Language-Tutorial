@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+import NaturalLanguage
+
+class TextClassificationViewModel: ObservableObject {
+    @Published var jazz: String = ""
+    
+    
+}

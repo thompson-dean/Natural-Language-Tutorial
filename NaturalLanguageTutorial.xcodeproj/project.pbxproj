@@ -11,6 +11,24 @@
 		F7461BEB28FE767A00FEF144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461BEA28FE767A00FEF144 /* ContentView.swift */; };
 		F7461BED28FE767D00FEF144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7461BEC28FE767D00FEF144 /* Assets.xcassets */; };
 		F7461BF028FE767D00FEF144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7461BEF28FE767D00FEF144 /* Preview Assets.xcassets */; };
+		F7461BF728FE7C4400FEF144 /* Tokenization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461BF628FE7C4400FEF144 /* Tokenization.swift */; };
+		F7461BF928FE7C4E00FEF144 /* Lemmatization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461BF828FE7C4E00FEF144 /* Lemmatization.swift */; };
+		F7461BFB28FE7C5B00FEF144 /* PartOfSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461BFA28FE7C5B00FEF144 /* PartOfSpeech.swift */; };
+		F7461BFD28FE7C6600FEF144 /* LanguageDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461BFC28FE7C6600FEF144 /* LanguageDetection.swift */; };
+		F7461BFF28FE7C7400FEF144 /* SpellChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461BFE28FE7C7400FEF144 /* SpellChecking.swift */; };
+		F7461C0128FE7C9000FEF144 /* NamedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C0028FE7C9000FEF144 /* NamedEntity.swift */; };
+		F7461C0328FE7CA000FEF144 /* TextClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C0228FE7CA000FEF144 /* TextClassification.swift */; };
+		F7461C0528FE7CA900FEF144 /* WordEmbeddings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C0428FE7CA900FEF144 /* WordEmbeddings.swift */; };
+		F7461C0728FE7CCC00FEF144 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C0628FE7CCC00FEF144 /* Introduction.swift */; };
+		F7461C1328FE81E300FEF144 /* IntroductionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C1228FE81E300FEF144 /* IntroductionViewModel.swift */; };
+		F7461C1528FE81F100FEF144 /* TokenizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C1428FE81F100FEF144 /* TokenizationViewModel.swift */; };
+		F7461C1728FE81FA00FEF144 /* LemmatizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C1628FE81FA00FEF144 /* LemmatizationViewModel.swift */; };
+		F7461C1928FE820300FEF144 /* PartOfSpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C1828FE820300FEF144 /* PartOfSpeechViewModel.swift */; };
+		F7461C1B28FE820D00FEF144 /* LanguageDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C1A28FE820D00FEF144 /* LanguageDetectionViewModel.swift */; };
+		F7461C1D28FE821500FEF144 /* SpellCheckingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C1C28FE821500FEF144 /* SpellCheckingViewModel.swift */; };
+		F7461C1F28FE821B00FEF144 /* NamedEntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C1E28FE821B00FEF144 /* NamedEntityViewModel.swift */; };
+		F7461C2128FE822500FEF144 /* TextClassificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C2028FE822500FEF144 /* TextClassificationViewModel.swift */; };
+		F7461C2328FE823600FEF144 /* WordEmbeddingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C2228FE823600FEF144 /* WordEmbeddingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +37,24 @@
 		F7461BEA28FE767A00FEF144 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7461BEC28FE767D00FEF144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7461BEF28FE767D00FEF144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7461BF628FE7C4400FEF144 /* Tokenization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenization.swift; sourceTree = "<group>"; };
+		F7461BF828FE7C4E00FEF144 /* Lemmatization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lemmatization.swift; sourceTree = "<group>"; };
+		F7461BFA28FE7C5B00FEF144 /* PartOfSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartOfSpeech.swift; sourceTree = "<group>"; };
+		F7461BFC28FE7C6600FEF144 /* LanguageDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetection.swift; sourceTree = "<group>"; };
+		F7461BFE28FE7C7400FEF144 /* SpellChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellChecking.swift; sourceTree = "<group>"; };
+		F7461C0028FE7C9000FEF144 /* NamedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedEntity.swift; sourceTree = "<group>"; };
+		F7461C0228FE7CA000FEF144 /* TextClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextClassification.swift; sourceTree = "<group>"; };
+		F7461C0428FE7CA900FEF144 /* WordEmbeddings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEmbeddings.swift; sourceTree = "<group>"; };
+		F7461C0628FE7CCC00FEF144 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
+		F7461C1228FE81E300FEF144 /* IntroductionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewModel.swift; sourceTree = "<group>"; };
+		F7461C1428FE81F100FEF144 /* TokenizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizationViewModel.swift; sourceTree = "<group>"; };
+		F7461C1628FE81FA00FEF144 /* LemmatizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemmatizationViewModel.swift; sourceTree = "<group>"; };
+		F7461C1828FE820300FEF144 /* PartOfSpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartOfSpeechViewModel.swift; sourceTree = "<group>"; };
+		F7461C1A28FE820D00FEF144 /* LanguageDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetectionViewModel.swift; sourceTree = "<group>"; };
+		F7461C1C28FE821500FEF144 /* SpellCheckingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCheckingViewModel.swift; sourceTree = "<group>"; };
+		F7461C1E28FE821B00FEF144 /* NamedEntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedEntityViewModel.swift; sourceTree = "<group>"; };
+		F7461C2028FE822500FEF144 /* TextClassificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextClassificationViewModel.swift; sourceTree = "<group>"; };
+		F7461C2228FE823600FEF144 /* WordEmbeddingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEmbeddingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +89,15 @@
 			children = (
 				F7461BE828FE767A00FEF144 /* NaturalLanguageTutorialApp.swift */,
 				F7461BEA28FE767A00FEF144 /* ContentView.swift */,
+				F7461C0828FE813900FEF144 /* Introduction */,
+				F7461C0928FE814000FEF144 /* Tokenization */,
+				F7461C1028FE815E00FEF144 /* Lemmatization */,
+				F7461C0F28FE815C00FEF144 /* PartOfSpeech */,
+				F7461C0E28FE815900FEF144 /* LanguageDetection */,
+				F7461C0D28FE815600FEF144 /* SpellChecking */,
+				F7461C0C28FE815100FEF144 /* NamedEntity */,
+				F7461C0A28FE814300FEF144 /* TextClassification */,
+				F7461C1128FE81B800FEF144 /* WordEmbeddings */,
 				F7461BEC28FE767D00FEF144 /* Assets.xcassets */,
 				F7461BEE28FE767D00FEF144 /* Preview Content */,
 			);
@@ -65,6 +110,87 @@
 				F7461BEF28FE767D00FEF144 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7461C0828FE813900FEF144 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				F7461C0628FE7CCC00FEF144 /* Introduction.swift */,
+				F7461C1228FE81E300FEF144 /* IntroductionViewModel.swift */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
+		F7461C0928FE814000FEF144 /* Tokenization */ = {
+			isa = PBXGroup;
+			children = (
+				F7461BF628FE7C4400FEF144 /* Tokenization.swift */,
+				F7461C1428FE81F100FEF144 /* TokenizationViewModel.swift */,
+			);
+			path = Tokenization;
+			sourceTree = "<group>";
+		};
+		F7461C0A28FE814300FEF144 /* TextClassification */ = {
+			isa = PBXGroup;
+			children = (
+				F7461C0228FE7CA000FEF144 /* TextClassification.swift */,
+				F7461C2028FE822500FEF144 /* TextClassificationViewModel.swift */,
+			);
+			path = TextClassification;
+			sourceTree = "<group>";
+		};
+		F7461C0C28FE815100FEF144 /* NamedEntity */ = {
+			isa = PBXGroup;
+			children = (
+				F7461C0028FE7C9000FEF144 /* NamedEntity.swift */,
+				F7461C1E28FE821B00FEF144 /* NamedEntityViewModel.swift */,
+			);
+			path = NamedEntity;
+			sourceTree = "<group>";
+		};
+		F7461C0D28FE815600FEF144 /* SpellChecking */ = {
+			isa = PBXGroup;
+			children = (
+				F7461BFE28FE7C7400FEF144 /* SpellChecking.swift */,
+				F7461C1C28FE821500FEF144 /* SpellCheckingViewModel.swift */,
+			);
+			path = SpellChecking;
+			sourceTree = "<group>";
+		};
+		F7461C0E28FE815900FEF144 /* LanguageDetection */ = {
+			isa = PBXGroup;
+			children = (
+				F7461BFC28FE7C6600FEF144 /* LanguageDetection.swift */,
+				F7461C1A28FE820D00FEF144 /* LanguageDetectionViewModel.swift */,
+			);
+			path = LanguageDetection;
+			sourceTree = "<group>";
+		};
+		F7461C0F28FE815C00FEF144 /* PartOfSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				F7461BFA28FE7C5B00FEF144 /* PartOfSpeech.swift */,
+				F7461C1828FE820300FEF144 /* PartOfSpeechViewModel.swift */,
+			);
+			path = PartOfSpeech;
+			sourceTree = "<group>";
+		};
+		F7461C1028FE815E00FEF144 /* Lemmatization */ = {
+			isa = PBXGroup;
+			children = (
+				F7461BF828FE7C4E00FEF144 /* Lemmatization.swift */,
+				F7461C1628FE81FA00FEF144 /* LemmatizationViewModel.swift */,
+			);
+			path = Lemmatization;
+			sourceTree = "<group>";
+		};
+		F7461C1128FE81B800FEF144 /* WordEmbeddings */ = {
+			isa = PBXGroup;
+			children = (
+				F7461C0428FE7CA900FEF144 /* WordEmbeddings.swift */,
+				F7461C2228FE823600FEF144 /* WordEmbeddingsViewModel.swift */,
+			);
+			path = WordEmbeddings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +263,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7461C0728FE7CCC00FEF144 /* Introduction.swift in Sources */,
+				F7461BF928FE7C4E00FEF144 /* Lemmatization.swift in Sources */,
+				F7461C2128FE822500FEF144 /* TextClassificationViewModel.swift in Sources */,
+				F7461BF728FE7C4400FEF144 /* Tokenization.swift in Sources */,
 				F7461BEB28FE767A00FEF144 /* ContentView.swift in Sources */,
+				F7461C1B28FE820D00FEF144 /* LanguageDetectionViewModel.swift in Sources */,
+				F7461C2328FE823600FEF144 /* WordEmbeddingsViewModel.swift in Sources */,
+				F7461C0328FE7CA000FEF144 /* TextClassification.swift in Sources */,
+				F7461BFF28FE7C7400FEF144 /* SpellChecking.swift in Sources */,
+				F7461BFD28FE7C6600FEF144 /* LanguageDetection.swift in Sources */,
 				F7461BE928FE767A00FEF144 /* NaturalLanguageTutorialApp.swift in Sources */,
+				F7461C1328FE81E300FEF144 /* IntroductionViewModel.swift in Sources */,
+				F7461C1528FE81F100FEF144 /* TokenizationViewModel.swift in Sources */,
+				F7461C0128FE7C9000FEF144 /* NamedEntity.swift in Sources */,
+				F7461BFB28FE7C5B00FEF144 /* PartOfSpeech.swift in Sources */,
+				F7461C1D28FE821500FEF144 /* SpellCheckingViewModel.swift in Sources */,
+				F7461C0528FE7CA900FEF144 /* WordEmbeddings.swift in Sources */,
+				F7461C1F28FE821B00FEF144 /* NamedEntityViewModel.swift in Sources */,
+				F7461C1928FE820300FEF144 /* PartOfSpeechViewModel.swift in Sources */,
+				F7461C1728FE81FA00FEF144 /* LemmatizationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +417,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +426,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ArsagaThompson.NaturalLanguageTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -302,8 +449,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +458,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ArsagaThompson.NaturalLanguageTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

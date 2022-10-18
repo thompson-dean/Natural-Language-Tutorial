@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct LanguageDetection: View {
+    
+    @StateObject var viewModel = LanguageDetectionViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            }
+        }
+        .navigationTitle("Language Detection")
     }
 }
 

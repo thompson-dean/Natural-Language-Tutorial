@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct NamedEntity: View {
+    
+    @StateObject var viewModel = NamedEntityViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            }
+        }
+        .navigationTitle("Named Entity Recognition")
     }
 }
 

@@ -9,13 +9,56 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                NavigationLink {
+                    Introduction()
+                } label: {
+                    Text("Introduction")
+                }
+                NavigationLink {
+                    Tokenization()
+                } label: {
+                    Text("Tokenization")
+                }
+                NavigationLink {
+                    Lemmatization()
+                } label: {
+                    Text("Lemmatization")
+                }
+                NavigationLink {
+                    PartOfSpeech()
+                } label: {
+                    Text("Part-Of-Speech Tagging")
+                }
+                NavigationLink {
+                    LanguageDetection()
+                } label: {
+                    Text("Language Detection")
+                }
+                NavigationLink {
+                    SpellChecking()
+                } label: {
+                    Text("Spell Checking")
+                }
+                NavigationLink {
+                    NamedEntity()
+                } label: {
+                    Text("Named Entity Recognition")
+                }
+                NavigationLink {
+                    TextClassification()
+                } label: {
+                    Text("Text Classification")
+                }
+                NavigationLink {
+                    WordEmbeddings()
+                } label: {
+                    Text("Word Embeddings")
+                }
+            }
+            .navigationTitle("目次")
         }
-        .padding()
     }
 }
 

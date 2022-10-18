@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+import NaturalLanguage
+
+class TokenizationViewModel: ObservableObject {
+    @Published var jazz: String = ""
+    
+    
+}

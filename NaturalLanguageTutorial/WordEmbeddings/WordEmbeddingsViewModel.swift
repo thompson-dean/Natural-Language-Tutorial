@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+import NaturalLanguage
+
+class WordEmbeddingsViewModel: ObservableObject {
+    @Published var jazz: String = ""
+    
+    
+}

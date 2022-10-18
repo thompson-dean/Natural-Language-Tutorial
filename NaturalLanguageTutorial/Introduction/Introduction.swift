@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct Introduction: View {
+    
+    @StateObject var viewModel = IntroductionViewModel()
+    
     var body: some View {
         NavigationStack {
-            ZStack {
-                Color.red
-                    .ignoresSafeArea(.all)
-                VStack {
-                    Text("INTRODUCTION")
-                }
+            VStack {
+                Text("INTRODUCTION")
             }
         }
+        .navigationTitle("Introduction to NLP")
     }
 }
 

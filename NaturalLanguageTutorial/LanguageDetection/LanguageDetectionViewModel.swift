@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+import NaturalLanguage
+
+class LanguageDetectionViewModel: ObservableObject {
+    @Published var jazz: String = ""
+    
+    
+}
