@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F736968828FFE3AE00D1AE12 /* Lemma.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736968728FFE3AE00D1AE12 /* Lemma.swift */; };
 		F7461BE928FE767A00FEF144 /* NaturalLanguageTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461BE828FE767A00FEF144 /* NaturalLanguageTutorialApp.swift */; };
 		F7461BEB28FE767A00FEF144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461BEA28FE767A00FEF144 /* ContentView.swift */; };
 		F7461BED28FE767D00FEF144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7461BEC28FE767D00FEF144 /* Assets.xcassets */; };
@@ -29,9 +30,12 @@
 		F7461C1F28FE821B00FEF144 /* NamedEntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C1E28FE821B00FEF144 /* NamedEntityViewModel.swift */; };
 		F7461C2128FE822500FEF144 /* TextClassificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C2028FE822500FEF144 /* TextClassificationViewModel.swift */; };
 		F7461C2328FE823600FEF144 /* WordEmbeddingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7461C2228FE823600FEF144 /* WordEmbeddingsViewModel.swift */; };
+		F7EAD17028FFC1A400A35EE1 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EAD16F28FFC1A400A35EE1 /* APICaller.swift */; };
+		F7EAD17628FFC21B00A35EE1 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EAD17528FFC21B00A35EE1 /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F736968728FFE3AE00D1AE12 /* Lemma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lemma.swift; sourceTree = "<group>"; };
 		F7461BE528FE767A00FEF144 /* NaturalLanguageTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaturalLanguageTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7461BE828FE767A00FEF144 /* NaturalLanguageTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalLanguageTutorialApp.swift; sourceTree = "<group>"; };
 		F7461BEA28FE767A00FEF144 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		F7461C1E28FE821B00FEF144 /* NamedEntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedEntityViewModel.swift; sourceTree = "<group>"; };
 		F7461C2028FE822500FEF144 /* TextClassificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextClassificationViewModel.swift; sourceTree = "<group>"; };
 		F7461C2228FE823600FEF144 /* WordEmbeddingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEmbeddingsViewModel.swift; sourceTree = "<group>"; };
+		F7EAD16F28FFC1A400A35EE1 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		F7EAD17528FFC21B00A35EE1 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				F7461BE828FE767A00FEF144 /* NaturalLanguageTutorialApp.swift */,
+				F7EAD17328FFC20500A35EE1 /* Service */,
+				F7EAD17428FFC20C00A35EE1 /* Model */,
 				F7461BEA28FE767A00FEF144 /* ContentView.swift */,
 				F7461C0828FE813900FEF144 /* Introduction */,
 				F7461C0928FE814000FEF144 /* Tokenization */,
@@ -193,6 +201,23 @@
 			path = WordEmbeddings;
 			sourceTree = "<group>";
 		};
+		F7EAD17328FFC20500A35EE1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F7EAD16F28FFC1A400A35EE1 /* APICaller.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F7EAD17428FFC20C00A35EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7EAD17528FFC21B00A35EE1 /* Token.swift */,
+				F736968728FFE3AE00D1AE12 /* Lemma.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,13 +298,16 @@
 				F7461C0328FE7CA000FEF144 /* TextClassification.swift in Sources */,
 				F7461BFF28FE7C7400FEF144 /* SpellChecking.swift in Sources */,
 				F7461BFD28FE7C6600FEF144 /* LanguageDetection.swift in Sources */,
+				F7EAD17028FFC1A400A35EE1 /* APICaller.swift in Sources */,
 				F7461BE928FE767A00FEF144 /* NaturalLanguageTutorialApp.swift in Sources */,
 				F7461C1328FE81E300FEF144 /* IntroductionViewModel.swift in Sources */,
+				F736968828FFE3AE00D1AE12 /* Lemma.swift in Sources */,
 				F7461C1528FE81F100FEF144 /* TokenizationViewModel.swift in Sources */,
 				F7461C0128FE7C9000FEF144 /* NamedEntity.swift in Sources */,
 				F7461BFB28FE7C5B00FEF144 /* PartOfSpeech.swift in Sources */,
 				F7461C1D28FE821500FEF144 /* SpellCheckingViewModel.swift in Sources */,
 				F7461C0528FE7CA900FEF144 /* WordEmbeddings.swift in Sources */,
+				F7EAD17628FFC21B00A35EE1 /* Token.swift in Sources */,
 				F7461C1F28FE821B00FEF144 /* NamedEntityViewModel.swift in Sources */,
 				F7461C1928FE820300FEF144 /* PartOfSpeechViewModel.swift in Sources */,
 				F7461C1728FE81FA00FEF144 /* LemmatizationViewModel.swift in Sources */,
