@@ -1,5 +1,5 @@
 //
-//  SpellChecking.swift
+//  TextClassification.swift
 //  NaturalLanguageTutorial
 //
 //  Created by Thompson Dean on 2022/10/18.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct SpellChecking: View {
+struct SentimentAnalysis: View {
     
-    @StateObject var viewModel = SpellCheckingViewModel()
+    @StateObject var viewModel = SentimentAnalaysisViewModel()
     @State private var isShowingExample: Bool = false
     @State private var isShowingReal: Bool = false
     
@@ -17,13 +17,13 @@ struct SpellChecking: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("What is Lemmatization?")
+                    Text("What is Sentiment Analysis?")
                         .font(.largeTitle)
                         .bold()
-                    Text("スペルチェックとは？")
+                    Text("感情分析とは？")
                         .font(.largeTitle)
                         .bold()
-                    Text("レンマ化は、トークンを辞書の見出し語に変換する処理です。例えば、 「builds」、 「building」、「built」をレンマ化で　→「build」（辞書形）。日本語だったら、「食べた」、「食べたい」「食べさせられた」をレンマ化で　→　「？？？」")
+                    Text("一般的にテキストに含まれる感情を予測する多値分類の文書分類タスクを指すことが多いです")
                         .font(.title2)
                         .padding(.trailing, 380)
                         .padding(.bottom, 8)
@@ -42,11 +42,11 @@ struct SpellChecking: View {
                     }
                     
                     if isShowingExample {
-                        Image("lemmatization_code_1")
+                        Image("sentiment_code")
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(8)
-                            .frame(width: 1200, height: 400)
+                            .frame(width: 710, height: 1000)
                     }
                     
                     Button {
@@ -63,18 +63,35 @@ struct SpellChecking: View {
                     }
                     
                     if isShowingReal {
+                        TextEditor(text: $viewModel.text)
+                            .font(.title2)
+                            .padding(4)
+                                .overlay(RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color.secondary).opacity(0.5))
+                                .frame(width: 1000, height: 50)
+                        
+                        Text(viewModel.getSentiment(text: viewModel.text).rawValue)
+                            .font(.system(size: 150))
+                        
+                        TextEditor(text: $viewModel.text2)
+                            .font(.title2)
+                            .foregroundColor(viewModel.getSentimentColor(text: viewModel.text2))
+                            .padding(4)
+                                .overlay(RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color.secondary).opacity(0.5))
+                                .frame(width: 1000, height: 50)
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: . infinity, alignment: .leading)
                 .padding(.horizontal, 20)
             }
         }
-        .navigationTitle("Lemmatization")
+        .navigationTitle("Sentiment Analysis")
     }
 }
 
-struct SpellChecking_Previews: PreviewProvider {
+struct TextClassification_Previews: PreviewProvider {
     static var previews: some View {
-        SpellChecking()
+        SentimentAnalysis()
     }
 }

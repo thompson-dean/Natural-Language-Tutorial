@@ -37,19 +37,9 @@ struct ContentView: View {
                     Text("Language Detection")
                 }
                 NavigationLink {
-                    SpellChecking()
+                    SentimentAnalysis()
                 } label: {
-                    Text("Spell Checking")
-                }
-                NavigationLink {
-                    NamedEntity()
-                } label: {
-                    Text("Named Entity Recognition")
-                }
-                NavigationLink {
-                    TextClassification()
-                } label: {
-                    Text("Text Classification")
+                    Text("Sentiment Analysis")
                 }
                 NavigationLink {
                     WordEmbeddings()
