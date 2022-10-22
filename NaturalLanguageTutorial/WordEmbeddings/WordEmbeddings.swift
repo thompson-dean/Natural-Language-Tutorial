@@ -23,7 +23,7 @@ struct WordEmbeddings: View {
                     Text("分散表現とは？")
                         .font(.largeTitle)
                         .bold()
-                    Text("レンマ化は、トークンを辞書の見出し語に変換する処理です。例えば、 「builds」、 「building」、「built」をレンマ化で　→「build」（辞書形）。日本語だったら、「食べた」、「食べたい」「食べさせられた」をレンマ化で　→　「？？？」")
+                    Text("分散表現とは単語をベクトルで表現した際のベクトルのこと。ベクトルがn次元である場合に、単語をn次元空間のある1点に埋め込むことを意味するため、埋め込み表現（Word Embedding）とも呼ばれる。")
                         .font(.title2)
                         .padding(.trailing, 380)
                         .padding(.bottom, 8)
@@ -42,11 +42,21 @@ struct WordEmbeddings: View {
                     }
                     
                     if isShowingExample {
-                        Image("lemmatization_code_1")
+                        Image("vector_1")
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(8)
-                            .frame(width: 1200, height: 400)
+                            .frame(width: 1300, height: 500)
+                        Image("vector_2")
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(8)
+                            .frame(width: 1300, height: 500)
+                        Image("vector_3")
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(8)
+                            .frame(width: 1300, height: 312)
                     }
                     
                     Button {
@@ -63,13 +73,36 @@ struct WordEmbeddings: View {
                     }
                     
                     if isShowingReal {
+                        SearchBar(text: $viewModel.text)
+                            .frame(width: 300)
+                            .onChange(of: viewModel.text) { newValue in
+                                viewModel.retrieveNeighbours(text: newValue.lowercased())
+                            }
+                        
+//                        Button {
+//                            viewModel.retrieveNeighbours(text: viewModel.text.lowercased())
+//                        } label: {
+//                            Text("似てる単語を探す")
+//                                .font(.title3)
+//                                .foregroundColor(.white)
+//                                .padding(.vertical, 8)
+//                                .padding(.horizontal, 16)
+//                        }
+//                        .background(Color.blue)
+//                        .cornerRadius(16)
+//                        .padding(8)
+                            
+                        List(viewModel.possibleSearchWords, id: \.self) { word in
+                            Text(word)
+                        }
+                        .frame(width: 300, height: 1000)
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: . infinity, alignment: .leading)
                 .padding(.horizontal, 20)
             }
         }
-        .navigationTitle("Lemmatization")
+        .navigationTitle("Word Embeddings")
     }
 }
 

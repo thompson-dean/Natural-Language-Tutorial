@@ -23,15 +23,27 @@ struct Introduction: View {
                         .font(.largeTitle)
                         .bold()
                     Text("Dean Thompson. Arsaga Partners App Division")
-                        .padding(.bottom, 36)
+                        .padding(.bottom, 24)
                     Text("自然言語処理とは")
                         .font(.title)
                         .bold()
                     Text("自然言語処理は、人間が日常的に使っている自然言語をコンピュータに処理させる一連の技術であり、人工知能と言語学の一分野である。")
                         .font(.title2)
                         .padding(.trailing, 380)
-                        .padding(.bottom, 36)
                         .fixedSize(horizontal: false, vertical: true)
+                        .padding(.bottom, 24)
+                    
+                    Text("Appleの自然言語処理のAPI")
+                        .font(.title)
+                        .bold()
+                    
+                    Image("natural_language")
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(16)
+                        .frame(width: 300, height: 60, alignment: .leading)
+                        .padding(.bottom, 24)
+                        
                     
                     Button {
                         withAnimation {
