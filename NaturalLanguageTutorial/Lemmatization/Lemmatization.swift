@@ -25,7 +25,7 @@ struct Lemmatization: View {
                     Text("レンマ化・見出語解析とは？")
                         .font(.largeTitle)
                         .bold()
-                    Text("レンマ化は、トークンを辞書の見出し語に変換する処理です。例えば、 「builds」、 「building」、「built」をレンマ化で　→「build」（辞書形）。日本語だったら、「食べた」、「食べたい」「食べさせられた」をレンマ化で　→　「？？？」")
+                    Text("レンマ化は、トークンを辞書の見出し語に変換する処理です。例えば、 「builds」、 「building」、「built」をレンマ化 して　→「build」（辞書形）。日本語だったら、「食べた」、「食べたい」「食べさせられた」をレンマ化で　→　「？？？」")
                         .font(.title2)
                         .padding(.trailing, 380)
                         .padding(.bottom, 8)

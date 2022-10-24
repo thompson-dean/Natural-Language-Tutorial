@@ -114,7 +114,7 @@ struct LanguageDetection: View {
                                 .font(.system(size: 150))
                                 .bold()
                                 .padding(16)
-                                .background(Color.blue)
+                                .background(Color.purple)
                                 .cornerRadius(16)
                         }
                         

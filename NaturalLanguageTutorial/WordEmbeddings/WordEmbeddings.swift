@@ -20,7 +20,7 @@ struct WordEmbeddings: View {
                     Text("What are Word Embeddings?")
                         .font(.largeTitle)
                         .bold()
-                    Text("分散表現とは？")
+                    Text("分散表現・埋め込み表現とは？")
                         .font(.largeTitle)
                         .bold()
                     Text("分散表現とは単語をベクトルで表現した際のベクトルのこと。ベクトルがn次元である場合に、単語をn次元空間のある1点に埋め込むことを意味するため、埋め込み表現（Word Embedding）とも呼ばれる。")

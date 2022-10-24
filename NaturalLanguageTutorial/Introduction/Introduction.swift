@@ -33,18 +33,30 @@ struct Introduction: View {
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 24)
                     
-                    Text("Appleの自然言語処理のAPI")
-                        .font(.title)
-                        .bold()
-                    
-                    Image("natural_language")
-                        .resizable()
-                        .scaledToFit()
-                        .cornerRadius(16)
-                        .frame(width: 300, height: 60, alignment: .leading)
-                        .padding(.bottom, 24)
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("課題")
+                            .font(.title)
+                            .bold()
+
+                        Text("NLPの最大のハードルは、NLPの技術を実用的なコードに変換することです。")
+                            .font(.title2)
+                            .padding(.trailing, 380)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .padding(.bottom, 24)
                         
+                        Text("課題の答え：Appleの自然言語処理のAPI")
+                            .font(.title)
+                            .bold()
+                        
+                        Image("natural_language")
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(16)
+                            .frame(width: 300, height: 60, alignment: .leading)
+                            .padding(.bottom, 24)
+                    }
                     
+                        
                     Button {
                         withAnimation {
                             isShowingAims.toggle()
